@@ -41,17 +41,22 @@ hive --service cli // 表示启动客户 一般直接hive即可
 hive cli启动
 
 创建库：
+
 hive > create database test;
+
 创建表：
+
 hive> create table test(name STRING);
 
 
 测试：
 hive> use test;
+
 OK
 Time taken: 0.936 seconds
 
 hive> select * from test;
+
 OK
 afadfa
 bbbbb
@@ -61,6 +66,7 @@ fffff
 Time taken: 6.943 seconds, Fetched: 5 row(s)
 
 hive> select * from test;
+
 OK
 afadfa
 bbbbb
@@ -70,6 +76,7 @@ fffff
 Time taken: 0.379 seconds, Fetched: 5 row(s)
 
 hive> select count(name) from test;
+
 Query ID = hadoop_20180411143659_8b1269e1-0ce5-4370-82ef-11ed1199f21a
 Total jobs = 1
 Launching Job 1 out of 1
@@ -79,6 +86,7 @@ OK
 Time taken: 26.964 seconds, Fetched: 1 row(s)
 
 hive> select count(name) from test;
+
 Query ID = hadoop_20180411143955_2481af90-662a-46db-b953-f74858e0e83a
 Total jobs = 1
 Launching Job 1 out of 1
