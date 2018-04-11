@@ -43,6 +43,7 @@ hive> create table test(name STRING);
 hive> use test;
 OK
 Time taken: 0.936 seconds
+
 hive> select * from test;
 OK
 afadfa
@@ -51,6 +52,7 @@ ccccc
 ccccc
 fffff
 Time taken: 6.943 seconds, Fetched: 5 row(s)
+
 hive> select * from test;
 OK
 afadfa
@@ -59,6 +61,7 @@ ccccc
 ccccc
 fffff
 Time taken: 0.379 seconds, Fetched: 5 row(s)
+
 hive> select count(name) from test;
 Query ID = hadoop_20180411143659_8b1269e1-0ce5-4370-82ef-11ed1199f21a
 Total jobs = 1
@@ -77,6 +80,7 @@ Status: Running (Executing on YARN cluster with App id application_1523428469267
 OK
 5
 Time taken: 21.902 seconds, Fetched: 1 row(s)
+
 hive> insert into table test values('aaaa');
 Query ID = hadoop_20180411144044_27828504-8354-42de-815d-29af3179558c
 Total jobs = 1
@@ -86,5 +90,6 @@ Status: Running (Executing on YARN cluster with App id application_1523428469267
 Loading data to table test.test
 OK
 Time taken: 16.793 seconds
+
 hive> 
 
