@@ -89,6 +89,7 @@ OK
 Time taken: 21.902 seconds, Fetched: 1 row(s)
 
 hive> insert into table test values('aaaa');
+
 Query ID = hadoop_20180411144044_27828504-8354-42de-815d-29af3179558c
 Total jobs = 1
 Launching Job 1 out of 1
